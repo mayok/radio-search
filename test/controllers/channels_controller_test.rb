@@ -12,4 +12,10 @@ class ChannelsControllerTest < ActionController::TestCase
     assert_select "title", "Search | #{@base_title}"
   end
 
+  test "should get result" do
+    get :result
+    assert_response :success
+    assert_select "title", "Result | #{@base_title}"
+  end
+
 end

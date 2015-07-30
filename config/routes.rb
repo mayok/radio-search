@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'channels#search'
+  get 'result' => 'channels#result'
 
 
 
