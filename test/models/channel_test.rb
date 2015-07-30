@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ChannelTest < ActiveSupport::TestCase
   def setup
-    @channel = Channel.new(title: "hogehoge", movieType: "sound", thumbnailPath: "foobar", personality: "piyopiyo")
+    @channel = Channel.new(title: "hogehoge", url: "fuga", thumbnailPath: "foobar", personality: "piyo", guest: "piyo", movieCount: "123")
   end
 
   test "should be valid" do

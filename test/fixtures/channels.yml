@@ -2,12 +2,16 @@
 
 one:
   title: MyString
-  movieType:
+  url: MyString
   thumbnailPath: MyString
   personality: MyText
+  guest: MyText
+  movieCount: MyString
 
 two:
   title: MyString
-  movieType:
+  url: MyString
   thumbnailPath: MyString
   personality: MyText
+  guest: MyText
+  movieCount: MyString
