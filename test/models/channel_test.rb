@@ -8,4 +8,9 @@ class ChannelTest < ActiveSupport::TestCase
   test "should be valid" do
     assert @channel.valid?
   end
+
+  test "title should be present" do
+    @channel.title = "    "
+    assert_not @channel.valid?
+  end
 end
