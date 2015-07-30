@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150730062144) do
+ActiveRecord::Schema.define(version: 20150730105744) do
 
   create_table "channels", force: :cascade do |t|
     t.string   "title"
-    t.string   "type"
     t.string   "thumbnailPath"
     t.text     "personality"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "url"
+    t.text     "guest"
+    t.string   "movieCount"
   end
 
 end
