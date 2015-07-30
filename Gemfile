@@ -17,5 +17,12 @@ group :development, :test do
 end
 
 group :test do
-  gem 'minitest-reporters'
+  gem "capybara"
+  gem "connection_pool"
+  gem "launchy"
+  gem "minitest-reporters"
+  gem "mocha"
+  gem "poltergeist"
+  gem "shoulda"
+  gem "test_after_commit"
 end
