@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  type: 
+  movieType:
   thumbnailPath: MyString
   personality: MyText
 
 two:
   title: MyString
-  type: 
+  movieType:
   thumbnailPath: MyString
   personality: MyText
