@@ -10,6 +10,7 @@ Minitest::Reporters.use!(
   Minitest.backtrace_filter)
 
 require "capybara/rails"
+require "minitest/rails/capybara"
 require "capybara/poltergeist"
 Capybara.javascript_driver = :poltergeist
 
