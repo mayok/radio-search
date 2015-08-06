@@ -20,7 +20,7 @@ group :test do
   gem "capybara"
   gem "connection_pool"
   gem "launchy"
-  gem "minitest-reporters"
+  #gem "minitest-reporters" # minitest-doc_reporter を使う
   gem "mocha"
   gem "poltergeist"
   gem "shoulda"

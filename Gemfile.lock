@@ -107,11 +107,6 @@ GEM
       minitest-capybara (~> 0.7.0)
       minitest-metadata (~> 0.5.0)
       minitest-rails (~> 2.1)
-    minitest-reporters (1.0.19)
-      ansi
-      builder
-      minitest (>= 5.0)
-      ruby-progressbar
     minitest-stub_any_instance (1.0.1)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
@@ -159,7 +154,6 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
-    ruby-progressbar (1.7.5)
     sass (3.4.16)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -224,7 +218,6 @@ DEPENDENCIES
   minitest-line
   minitest-rails
   minitest-rails-capybara
-  minitest-reporters
   minitest-stub_any_instance
   mocha
   pg (= 0.17.1)
