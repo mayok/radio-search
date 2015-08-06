@@ -1,12 +1,17 @@
 $dark: #3a3a41;
 $light: #f3f3f2;
 $btn-light: #f5f5f5;
-$border-hover: #c6c6c6;
+$btn-grey: #dfdfdf;
+$btn-dark: #ccc;
 $border-light: #ccc;
+$border-light-hover: #c6c6c6;
+$border-dark: #999;
+$border-dark-hover: #909090;
 
 body {
   margin: 0;
   padding: 0;
+  background: $light;
 }
 a {
   text-decoration: none;
@@ -55,12 +60,14 @@ form {
     box-sizing: border-box;
   }
   input[type="submit"] {
-    background: $btn-light;
+    padding: 8px 36px;
+    background: $btn-grey;
     color: $dark;
     border-color: $border-light;
-    border-radius: 2px;
+    border-radius: 4px;
     &:hover {
-      border-color: $border-hover;
+      background: $btn-dark;
+      border-color: $border-light-hover;
     }
   }
 }

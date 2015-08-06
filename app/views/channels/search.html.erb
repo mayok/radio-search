@@ -1,5 +1,5 @@
 <% provide(:title, "Search") %>
-<form>
-  <input type="text">
-  <input value="search" type="submit">
-</form>
+<%= form_tag("/result", method: "get") do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "search", name: nil %>
+<% end %>
