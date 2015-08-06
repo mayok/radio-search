@@ -3,5 +3,6 @@ class ChannelsController < ApplicationController
   end
 
   def result
+    @title = Channel.where(title: params[:search])
   end
 end

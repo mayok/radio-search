@@ -1,2 +1,7 @@
 <% provide(:title, "Result") %>
-<p>Not found</p>
+<% if @title.nil? %>
+  <p>Not found</p>
+<% else %>
+  <% debug @title %>
+<% end %>
+
