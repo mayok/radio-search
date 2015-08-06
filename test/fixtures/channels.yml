@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  url: MyString
-  thumbnailPath: MyString
-  personality: MyText
-  guest: MyText
-  movieCount: MyString
+  title: one
+  url: http://hogehoge.hoge.ho
+  thumbnailPath: http://hogehoge.hoge.ho/fuga
+  personality: "hoge, fuga"
+  guest: "piyo, pyo"
+  movieCount: "1"
 
 two:
-  title: MyString
-  url: MyString
-  thumbnailPath: MyString
-  personality: MyText
-  guest: MyText
-  movieCount: MyString
+  title: two
+  url: http://hogehoge.hoge.fu
+  thumbnailPath: http://hogehoge.hoge.fu/hoge
+  personality: hoge
+  guest: 
+  movieCount: "2"

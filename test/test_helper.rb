@@ -3,11 +3,12 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require "mocha/mini_test"
 
-require 'minitest/reporters'
-Minitest::Reporters.use!(
-  Minitest::Reporters::ProgressReporter.new,
-  ENV,
-  Minitest.backtrace_filter)
+require "minitest/doc_reporter"
+#require 'minitest/reporters'
+#Minitest::Reporters.use!(
+#  Minitest::Reporters::ProgressReporter.new,
+#  ENV,
+#  Minitest.backtrace_filter)
 
 require "capybara/rails"
 require "minitest/rails/capybara"
