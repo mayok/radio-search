@@ -20,4 +20,12 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", root_path
     #assert_select "p", "Not found"
   end
+
+  test "should redirect when search" do
+    get root_path
+    assert_template 'channels/search'
+    get result_path, search: "hoge"
+    assert_template 'channels/result'
+    assert_select 'div.text', 'hoge'
+  end
 end

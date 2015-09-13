@@ -3,6 +3,9 @@ class ChannelsController < ApplicationController
   end
 
   def result
-    @title = Channel.where(title: params[:search])
+    @search = params[:search]
+    @title        = Channel.where('title like ?', "%#{params[:search]}%")
+    @personality  = Channel.where('personality like ?', "%#{params[:search]}%")
+    @guest        = Channel.where('guest like ?', "%#{params[:search]}%")
   end
 end

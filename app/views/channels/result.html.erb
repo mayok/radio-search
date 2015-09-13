@@ -2,6 +2,18 @@
 <% if @title.nil? %>
   <p>Not found</p>
 <% else %>
-  <% debug @title %>
+  <%= content_tag(:div, @search, class: "text") %>
+
+  <% if @title %>
+    <%= render @title %>
+  <% end %>
+
+  <% if @personality %>
+    <%= render @personality %>
+  <% end %>
+
+  <% if @guest %>
+    <%= render @guest %>
+  <% end %>
 <% end %>
 

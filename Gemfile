@@ -18,23 +18,11 @@ group :development, :test do
 end
 
 group :test do
-  gem "capybara"
-  gem "connection_pool"
-  gem "launchy"
-  #gem "minitest-reporters" # minitest-doc_reporter を使う
-  gem "mocha"
-  gem "poltergeist"
-  gem "shoulda"
+  gem "minitest-reporters" 
+  gem "mini_backtrace"
   gem "test_after_commit"
-
-  gem "minitest-rails"
-  gem "minitest-rails-capybara" # capybaraで結合テストできるようにする
-  gem "minitest-doc_reporter" # テスト結果の表示を整形
-  # 機能追加系
-  gem "minitest-stub_any_instance" # メソッドmockを追加できる様にする
-  gem "minitest-bang" # let文で遅延読み込みを使えるようにする
-  gem "minitest-line" # 行番号指定でテスト実行出来る様にする
-  gem "factory_girl" # DBのデータのモックを作成
+  gem "guard"
+  gem "guard-minitest"
 end
 
 group :production do
