@@ -2,7 +2,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-uri = URI.parse('http://www.onsen.ag/data/api/getMovieInfo/yryr')
+uri = URI.parse('http://www.onsen.ag/data/api/getMovieInfo/charlotte')
 json = Net::HTTP.get(uri).gsub(/(callback\(|\)\;)/,"")
 result = JSON.parse(json)
 puts result
