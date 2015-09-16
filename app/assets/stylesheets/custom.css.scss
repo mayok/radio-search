@@ -71,6 +71,28 @@ form {
     }
   }
 }
+
+.result {
+  padding: 10px 0;
+  text-align: left;
+}
+.result:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.text {
+  margin-top: 10px;
+  text-align: left;
+}
+.title {
+}
+.personality {
+  float: left;
+}
+.guest {
+}
+
 footer {
   p {
     text-align: left;

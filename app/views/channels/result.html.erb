@@ -2,7 +2,7 @@
 <% if @title.nil? %>
   <p>Not found</p>
 <% else %>
-  <%= content_tag(:div, @search, class: "text") %>
+  <%= content_tag(:span, "#{@search} の検索結果") %>
 
   <% if @title %>
     <%= render @title %>

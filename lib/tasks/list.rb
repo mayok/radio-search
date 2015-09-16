@@ -13,13 +13,13 @@ class Tasks::List
       result = JSON.parse(json)
 
       unless result["type"].nil?
-        c = Channels.new
+        c = Channel.new
         c.title         = result["title"]
         c.thumbnailPath = result["thumbnailPath"]
         c.personality   = result["personality"]
         c.guest         = result["guest"]
         c.url           = result["url"]
-        c.movieCound    = result["count"]
+        c.movieCount    = result["count"]
 
         c.save
       end
