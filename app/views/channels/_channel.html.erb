@@ -1,6 +1,9 @@
-<div class="result">
-  <%= content_tag :div, link_to(channel.title, "http://www.onsen.ag/#{channel.url}"), class: "title" %>
-  <%= content_tag :div, channel.personality, class: "personality" %>
-  <%= content_tag :div, channel.guest, class: "guest" %>
-</div>
+<% unless @id.include?(channel.id) %>
+  <div class="result">
+    <%= content_tag :div, link_to(channel.title, "http://www.onsen.ag/#{channel.url}"), class: "title" %>
+    <%= content_tag :div, channel.personality, class: "personality" %>
+    <%= content_tag :div, channel.guest, class: "guest" %>
+  </div>
 
+  <% @id.push(channel.id) %>
+<% end %>
